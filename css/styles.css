@@ -219,7 +219,8 @@ img {
     color: var(--white-color);
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
     background: var(--ocean-color);
 }
 
@@ -314,7 +315,8 @@ img {
     background-color: var(--accent-color);
 }
 
-.socials-team-link:hover {
+.socials-team-link:hover,
+.socials-team-link:focus {
     background-color: var(--ocean-color);
 }
 
@@ -354,11 +356,13 @@ img {
     fill: var(--buffed-plum-color);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--ocean-color);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
     fill: var(--ocean-color);
 }
 
@@ -474,6 +478,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.socials-footer-link:hover {
+.socials-footer-link:hover,
+.socials-footer-link:focus {
     background-color: var(--green-footer-color);
 }
