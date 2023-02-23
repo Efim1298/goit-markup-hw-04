@@ -7,6 +7,9 @@
     --cloud-color: #F4F4FD;
     --cornflower-color: #E7E9FC;
     --platinum-color: #E5E5E5;
+    --buffed-plum-color: #AFB1B8;
+    --green-footer-color: #31D0AA;
+    --light-slate-color: #8E8F99;
 }
 
 
@@ -98,6 +101,8 @@ img {
 
 .main-header {
     border-bottom: 1px solid var(--cornflower-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 
 .logo {
@@ -160,8 +165,6 @@ img {
     font-style: normal;
 }
 
-
-
 .contact-item:hover,
 .contact-item:focus,
 .contact-item:hover,
@@ -180,7 +183,11 @@ img {
 .hero {
     padding: 188px 0;
     text-align: center;
-    background: var(--title-text-color);
+    background-color: var(--title-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -228,13 +235,24 @@ img {
 
 .feature-item {
     flex-basis: 264px;
+
 }
 
+.features-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 264;
+    gap: 24px;
+    margin-bottom: 8px;
+    background: var(--cloud-color);
+}
 
 
 /* _________________Examples of work_________________ */
 
-.work-img-lis {
+.work-img-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -263,11 +281,79 @@ img {
 }
 
 .team-content {
-    background: var(--white-color);
-    text-align: center;
     padding: 32px 0;
+    text-align: center;
+    background: var(--white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+.socials-team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.socials-team-item {
+    width: 40px;
+    height: 40px;
+}
+
+.socials-team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.socials-team-link:hover {
+    background-color: var(--ocean-color);
+}
+
+.socials-team-icon {
+    fill: var(--cloud-color)
+}
+
+
+
+/* _________________Customers_________________ */
+
+.client-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.client-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+
+.client-link {
+    width: 100%;
+    height: 100%;
+}
+
+.client-icon {
+    fill: var(--buffed-plum-color);
+}
+
+.client-container:hover {
+    border: 1px solid var(--ocean-color);
+}
+
+.client-container:hover .client-icon {
+    fill: var(--ocean-color);
 }
 
 
@@ -320,14 +406,18 @@ img {
 
 .port-item {
     flex-basis: calc(100% - 48px) / 3;
+}
 
+.port-item:hover,
+.port-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .port-content {
-    text-align: left;
     padding: 32px 0 32px 16px;
-    border: 1px solid var(--cornflower-color);
     border-top: 0;
+    text-align: left;
+    border: 1px solid var(--cornflower-color);
 }
 
 
@@ -337,6 +427,12 @@ img {
 .footer {
     background: var(--title-text-color);
     padding: 100px 0;
+}
+
+.footer-container {
+    display: flex;
+    gap: 120px;
+
 }
 
 .footer-logo {
@@ -349,4 +445,25 @@ img {
     margin-top: 16px;
     width: 264px;
     color: var(--cornflower-color);
+}
+
+
+.footer-socials-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: var(--white-color);
+}
+
+.socials-foter-icon {
+    fill: var(--cloud-color)
+}
+
+.socials-footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-footer-link:hover {
+    background-color: var(--green-footer-color);
 }
